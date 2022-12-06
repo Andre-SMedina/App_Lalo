@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="initial-scale=1, width=device-width, viewport-fit=cover"
+    />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>Lalo's Pizza</title>
+  </head>
+  <body>
+    <div id="apagar" class="hidden bloquear">
+      <div class="apagar">
+        <h2>Excluir Registro?</h2>
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+      </div>
+    </div>
+    <div id="Home" class="page">
+      <h1>Home</h1>
+      <hr />
+      <div class="main">
+        <div>
+          <p>Entrada:</p>
+          <input type="number" id="entrada" autofocus />
+        </div>
+        <div>
+          <p>Data:</p>
+          <input type="date" id="data" />
+        </div>
+        <div>
+          <button id="btnSalvar" onclick="salvar()">Salvar</button>
+        </div>
+      </div>
+      <p id="alerta" class="alerta"></p>
+      <br />
+      <div id="listaDiv">
+        <h2>Entradas de Hoje</h2>
+        <ul id="lista"></ul>
+      </div>
+    </div>
+
+    <div id="Resumo" class="page hidden">
+      <h1>Resumo</h1>
+      <hr />
+      <div>
+        <h2>Total do dia</h2>
+        <h3 id="totDia">R$ 0,00</h3>
+      </div>
+      <div>
+        <h2>Total da semana</h2>
+        <h3 id="totSemana">R$ 0,00</h3>
+      </div>
+      <div>
+        <h2>Total do mês</h2>
+        <h3 id="totMes">R$ 0,00</h3>
+      </div>
+      <div>
+        <h2>Total do ano</h2>
+        <h3 id="totAno">R$ 0,00</h3>
+      </div>
+    </div>
+
+    <div id="Pesquisar" class="page hidden">
+      <h1>Pesquisar</h1>
+      <hr />
+      <div class="pesquisar">
+        <div>
+          <input type="date" id="inputPesquisar" autofocus />
+        </div>
+        <div>
+          <button id="btnPesquisar" onclick="pesquisar()">Pesquisar</button>
+        </div>
+      </div>
+      <p id="alerta2" class="alerta"></p>
+      <div id="listaDiv2">
+        <h2>Resultado da Pesquisa</h2>
+        <ul id="lista2"></ul>
+      </div>
+    </div>
+
+    <div class="footer">
+      <ul class="footer_nav" id="ulFooter">
+        <li class="btnFooter footerActive">Home</li>
+        <li id="resumo" class="btnFooter">Resumo</li>
+        <li id="pesquisa" class="btnFooter">Pesquisar</li>
+      </ul>
+    </div>
+
+    <script src="js/index.js"></script>
+  </body>
+</html>

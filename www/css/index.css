@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  background-color: rgb(65, 65, 65);
+  color: white;
+  /* min-height: 980px; */
+}
+h1,
+h2,
+h3 {
+  margin: 10px 0;
+  text-align: center;
+}
+h3 {
+  color: yellow;
+}
+p,
+li {
+  font-size: 20px;
+}
+
+input {
+  padding: 4px;
+  width: 150px;
+  font-size: 1.2em;
+  background-color: #fff;
+}
+button {
+  padding: 10px 70px;
+  background-color: #06109a;
+  font-size: 1.3em;
+  color: white;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  font-weight: bold;
+}
+button:active {
+  background-color: hsl(236, 93%, 41%);
+  scale: 98%;
+}
+ul {
+  text-align: center;
+  background-color: #83067e;
+  width: 300px;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+li {
+  margin-top: 2px;
+  border: 2px solid #000;
+}
+.alerta {
+  text-align: center;
+  margin-top: 5px;
+}
+#listaDv {
+  padding-bottom: 200px;
+}
+.bloquear {
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  position: absolute;
+}
+.apagar {
+  background-color: rgb(161, 0, 0);
+  width: 400px;
+  padding: 5px;
+  text-align: center;
+  margin: 50px auto;
+  border-radius: 8px;
+}
+.hidden {
+  display: none;
+}
+.page {
+  padding-bottom: 70px;
+}
+.main {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: center;
+}
+.btn {
+  border-radius: 5px;
+  padding: 5px 0;
+  width: 300px;
+  margin: 10px auto;
+  font-size: 1.3em;
+  display: block;
+}
+.pesquisar {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.ativo {
+  background-color: hsl(302, 91%, 37%);
+}
+
+/* FOOTER -------------------------------------------------------*/
+.footer ul {
+  width: 100%;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-around;
+  font-size: 1.4em;
+}
+.btnFooter {
+  text-align: center;
+  background-color: #06109a;
+  border: 1px solid #c3c3c3;
+  padding: 10px 5px;
+  width: 100%;
+}
+.footerActive {
+  background-color: rgb(12, 130, 215);
+  color: white;
+  box-shadow: 0px 0px 10px rgb(3, 164, 234);
+}
