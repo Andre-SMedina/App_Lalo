@@ -58,16 +58,12 @@ async function bancoCreate() {
 }
 bancoCreate();
 
-carregar(false, true);
-
 function alerta(alerta, msg) {
   document.querySelector(`#${alerta}`).innerText = msg;
   setTimeout(() => {
     document.querySelector(`#${alerta}`).innerText = "";
   }, 3000);
 }
-// let cont = 0;
-//ENTRADA------------------------------------------------------------------------SALVAR
 
 //DETALHES------------------------------------------------------------------------
 document.querySelector("#resumo").addEventListener("click", async () => {

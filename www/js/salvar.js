@@ -3,12 +3,15 @@ async function salvar() {
   const hora = `${("0" + time.getHours()).slice(-2)}:${(
     "0" + time.getMinutes()
   ).slice(-2)}:${("0" + time.getSeconds()).slice(-2)}`;
-  const dias = ("0" + time.getDate()).slice(-2);
+  //   const dias = ("0" + time.getDate()).slice(-2);
   // cont += 1;
   // const dias = ("0" + cont.toString()).slice(-2);
   // const dias = "10";
-  const mes = ("0" + (time.getMonth() + 1)).slice(-2);
-  const ano = time.getFullYear();
+  //   const mes = ("0" + (time.getMonth() + 1)).slice(-2);
+  const dias = "22";
+  const mes = "02";
+  const ano = "2023";
+  //   const ano = time.getFullYear();
   const numDias = new Date(ano, mes, 0).getDate();
   const dataSelecionada = document.querySelector("#data").value;
   const dataAtual = `${ano}-${mes}-${dias}`;

@@ -48,3 +48,5 @@ async function carregar(historico, home, pesquisa) {
     }
   }
 }
+
+carregar(false, true);
